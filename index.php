@@ -4,7 +4,7 @@
     $href= "./statics/styles/inicio-registro_".$casa[$aleat].".css";
     $link_registro= "http://localhost/Curso_Web/Actividades_CW/Act_casas/dynamics/php/registro.php";
     echo "<!DOCTYPE html>
-    <html lang='en'>
+    <html lang='es'>
     <head>
         <meta charset='UTF-8'>
         <meta name='viewport' content='width=device-width, initial-scale=1.0'>
