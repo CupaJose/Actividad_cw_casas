@@ -21,23 +21,24 @@
         <br>
         <h2>Ingresa tus datos</h2>
         <br>
-        <form>
+        <form id='datos'>
             <label>Nombre:
-                <input type='text'>
+                <input type='text' name='usuario'>
             </label>
             <br> <br>
             <label>Contraseña:
-                <input type='text'>
+                <input type='password' name='contrasena'>
             </label>
             <br> <br>
-            <button type='submit'>Enviar</button>
+            <button type='submit' id='enviar'>Enviar</button>
             <br> <br>
         </form>
         <form>
             <h5>¿Aún no tienes una cuenta?</h5>
             <br> 
-            <button><a href='http://localhost/Curso_Web/Actividades_CW/Act_casas/dynamics/php/registro.php'>Registrate aquí!</a></button>
+            <button><a href='./Dynamics/php/registro.php'>Registrate aquí!</a></button>
         </form>
+        <script src=./Dynamics/js/iniciosesion.js></script>
     </div></center>
 </body>
 </html>";

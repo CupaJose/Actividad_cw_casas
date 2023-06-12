@@ -5,10 +5,11 @@
    if ($include && $conexion){
         $usuario=(isset($_POST['usuario']) && $_POST["usuario"] != "")? $_POST['usuario'] : "";
         $contrasena=(isset($_POST['contrasena']) && $_POST["contrasena"] != "")? $_POST['contrasena'] : "";
+
         $longuser=strlen($usuario);
         $longcon=strlen($contrasena);
         if ($longcon>=8 && $longuser>=8){
-        $peticion="INSERT INTO usuario VALUES ('$usuario', '$contrasena')";
+        $peticion="INSERT INTO usuario (nombre, contrasenia) VALUES ('$usuario', '$contrasena')";
         $query =mysqli_query ($conexion,$peticion);
         }
     }
@@ -30,13 +31,13 @@
             <h1>Bienvenidx nuevx usuarix!</h1>
             <!--El div de el form de registro-->
             <br><br><br><br>
-                <form >
+                <form action= './registro.php' method = 'POST'>
                     <label>Nombre:
-                        <input type='text'>
+                        <input type='text' name='usuario'>
                     </label>
                     <br> <br>
                     <label>Contraseña:
-                        <input type='text'>
+                        <input type='password' name='contrasena'>
                     </label>
                     <br> <br>
                     <button type='submit'>Enviar</button>
