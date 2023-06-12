@@ -1,11 +1,226 @@
-/*Mia: Intente meter las casas en una sola fila y no pude, los de css porfi lo acomodan :(*/
-/*#contenedorcasas{
-    width: 90%;
-    display: grid;
-    display: grid;
-    grid-template-rows:100px;
-    text-align: center;
-.casas{
-    width: 33%;
-    padding: 20px;
-}*/
+
+/*Isaac - elige tus casa*/
+/* =========================================    * FUENTES   ======================================================= */
+@font-face {
+    font-family: "Titulo";
+    src: url('../fonts/Bitcheese.ttf');
+}
+@font-face {
+    font-family: "Texto";
+    src: url('../fonts/RoditBugs.ttf');
+}
+
+/* =========================================    + ANIMACIONES   ======================================================= */
+@keyframes Tambalea{
+    0%{
+        transform: rotate(0deg);
+    }
+    50%{
+        transform: rotate(2deg);
+    }
+    100%{
+        transform: rotate(5deg);
+    }
+}
+@keyframes Agranda{
+    0%{
+        transform:scale(1);
+    }
+    25%{
+        left: 70px;
+    }
+    50%{
+        transform:scale(1.3);
+        left: 250px;
+    }
+    75%{
+        left: 420px;
+    }
+}
+
+/* ======================================     | ELEGIR CASA    ==============================================================================*/
+
+
+                            /* -------------------- Generales  ---------------------------*/
+*{
+    margin: 5px;
+    padding: 5px;
+}
+body{
+    background-image: url("https://i.pinimg.com/736x/11/2e/77/112e7759b2b0441fb565d8f2be88be0c.jpg");
+    background-size: 100%;
+    align-content: center;
+}
+center h1{
+    position:static;
+    padding: 1.5%;
+    background-image: url("https://i.pinimg.com/564x/89/70/15/897015f72b7b0d5764e0dddcb4381995.jpg");
+
+    font-family: "Titulo";
+    font-size: 3rem;
+    color: beige;
+    letter-spacing:5px;
+    
+    border-radius: 50%;
+    width: 50%;
+}
+h1:hover{
+    animation-name: Agranda;
+    animation-duration: 3s;
+    animation-delay: 0.2s;
+    animation-timing-function:linear;
+    animation-iteration-count: infinite;
+    animation-direction:alternate-reverse;
+}
+
+div#FondoTitulo{
+    position: relative;
+    background-image: url("https://i.pinimg.com/564x/89/70/15/897015f72b7b0d5764e0dddcb4381995.jpg");
+
+    top: 70px;
+    right: 40%;
+    width: 21%;
+}
+div#FondoTitulo2{
+    position: relative;
+    background-image: url("https://i.pinimg.com/564x/89/70/15/897015f72b7b0d5764e0dddcb4381995.jpg");
+
+    bottom: 83px;
+    left: 40%;
+    width: 21%;
+}
+
+
+
+div#contenedorcasas{
+    position: relative;
+    display: inline-block;
+    align-content: center;
+}
+div.casas{
+    position: relative;
+    display: inline-block;
+    background-color: aqua;
+    width: 30%;
+}
+
+
+                            /* -------------------- Especificos ---------------------------*/
+
+img#ImgAj{
+    width: 55%;
+    height: 55%;
+}
+img#ImgAj:hover{
+    animation-name: Agranda;
+    animation-duration: 3s;
+    animation-delay: 0.2s;
+    animation-timing-function:linear;
+    animation-iteration-count: infinite;
+    animation-direction:alternate-reverse;
+}
+
+img#ImgTepos{
+    width: 35%;
+    height: 35%;
+}
+img#ImgTepos:hover{
+    animation-name: Agranda;
+    animation-duration: 3s;
+    animation-delay: 0.2s;
+    animation-timing-function:linear;
+    animation-iteration-count: infinite;
+    animation-direction:alternate-reverse;
+}
+
+img#ImgHal{
+    width: 36%;
+    height: 36%;
+}
+img#ImgHal:hover{
+    animation-name: Agranda;
+    animation-duration: 3s;
+    animation-delay: 0.2s;
+    animation-timing-function:linear;
+    animation-iteration-count: infinite;
+    animation-direction:alternate-reverse;
+}
+
+
+div.casas#Ajolotes{
+    position: relative;
+    display: inline-block;
+    background-image: url("https://i.pinimg.com/236x/da/b6/92/dab692f89c297197e69f4ec26a08ab82.jpg");
+    background-size: 100%;
+    
+    width: 30%;
+    border-radius: 50%;
+}
+div.NomCasa#PAjolotes{
+    background-color: rgb(245, 122, 239);
+    color: rgb(0, 0, 0);
+    font-family: "Texto";
+    font-size: 2rem;
+    
+    border-radius: 50%;
+    width: 50%;
+    height: 50%;
+}
+.NomCasa#PAjolotes:hover{
+    padding: 15px;
+    align-items: center;
+}
+
+
+div.casas#Teporingos{
+    position: relative;
+    display: inline-block;
+    background-image: url("https://i.pinimg.com/736x/f3/03/8b/f3038b381f1a6073fb90188ad036ded1.jpg");
+
+    width: 30%;
+    border-radius: 50%;
+}
+div.NomCasa#PTeporingos{
+    background-color: rgb(190, 172, 112);
+    color: rgb(0, 0, 0);
+    font-family: "Texto";
+    font-size: 2rem;
+    
+    border-radius: 50%;
+    width: 50%;
+    height: 50%;
+}
+.NomCasa#PTeporingos:hover{
+    background-image: url("https://i.pinimg.com/564x/48/12/67/481267276a02bd83a03d0d8aff158ba0.jpg");
+    color: beige;
+    padding: 15px;
+    align-items: center;
+}
+
+
+div.casas#Halcones{
+    position: relative;
+    display: inline-block;
+    background-image: url("https://i.pinimg.com/236x/27/69/d2/2769d2f436a8eff5afbd9133d0b0b178.jpg");
+    width: 30%;
+    border-radius: 50%;
+}
+div.NomCasa#PHalcones{
+    background-color: rgb(231, 221, 80);
+    color: rgb(0, 0, 0);
+    font-family: "Texto";
+    font-size: 2rem;
+    
+    border-radius: 50%;
+    width: 50%;
+    height: 50%;
+}
+.NomCasa#PHalcones:hover{
+    background-image: url("https://i.pinimg.com/564x/48/12/67/481267276a02bd83a03d0d8aff158ba0.jpg");
+    color: beige;
+    padding: 15px;
+    align-items: center;
+}
+
+
+/* ======================================     | ELEGIR CASA    ==============================================================================*/
