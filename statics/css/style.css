@@ -51,7 +51,7 @@ body{
     background-size: 100%;
     align-content: center;
 }
-center h1{
+h1{
     position:static;
     padding: 1.5%;
     background-image: url("https://i.pinimg.com/564x/89/70/15/897015f72b7b0d5764e0dddcb4381995.jpg");
@@ -191,8 +191,6 @@ div.NomCasa#PTeporingos{
     height: 50%;
 }
 .NomCasa#PTeporingos:hover{
-    background-image: url("https://i.pinimg.com/564x/48/12/67/481267276a02bd83a03d0d8aff158ba0.jpg");
-    color: beige;
     padding: 15px;
     align-items: center;
 }
@@ -216,8 +214,6 @@ div.NomCasa#PHalcones{
     height: 50%;
 }
 .NomCasa#PHalcones:hover{
-    background-image: url("https://i.pinimg.com/564x/48/12/67/481267276a02bd83a03d0d8aff158ba0.jpg");
-    color: beige;
     padding: 15px;
     align-items: center;
 }

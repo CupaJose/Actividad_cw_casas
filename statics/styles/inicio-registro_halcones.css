@@ -1,0 +1,42 @@
+@font-face {
+    font-family: "letras";
+    src: url("../fonts/Hey\ Comic.ttf");
+}
+body{
+    font-family: "letras", 'serif';
+    background-image: url("../media/halcones_fondo.webp");
+}
+#forms{
+    background-color: rgb(167, 130, 82);
+    width: 30rem;
+    height: 30rem;
+}
+h1{
+    color:rgb(100, 73, 14);
+}
+h2{
+    color:rgb(121, 87, 15);
+}
+h5{
+    color:rgb(131, 86, 29);
+}
+input{
+    border-radius: 100px;
+    border-style: none;
+    background-color: rgb(156, 101, 29);
+}
+button{
+    background-color: rgb(160, 115, 32);
+    border-radius: 100px;
+    border-color: rgb(90, 61, 17);
+    padding: 10px;
+}
+button:hover{
+    transition: 500ms;
+    transform: scale(1.2);
+}
+a{
+    outline: none;
+    text-decoration: none;
+    color:rgb(0, 0, 0);
+}
