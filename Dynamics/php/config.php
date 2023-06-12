@@ -1,5 +1,5 @@
 <?php
-    define("DBUSER","root");
+    define("DBUSER","alumno");
     define("DBHOST","localhost");
     define("DBPASS","");
     define("DB","casas_cw");

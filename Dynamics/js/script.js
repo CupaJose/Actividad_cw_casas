@@ -1,12 +1,11 @@
 window.addEventListener("load",()=>{
-    let info_inicio_sesion = document.getElementById("info-inicio-sesion");
     let registro = document.getElementById("btnregistro");
     let registroForm = document.getElementById("registro-form");
 
     registro.addEventListener("click",(e)=>{
         e.preventDefault();
         datosFORM = new FormData(registroForm);
-        fetch("../Dynamics/php/registro.php", {
+        fetch("../php/registro-guardarDatos.php", {
             method: "POST",
             body: datosFORM
         }).then((respuesta)=>{

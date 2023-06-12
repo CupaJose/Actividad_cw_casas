@@ -8,7 +8,7 @@ window.addEventListener("load", ()=>{
         fetch ("./Dynamics/php/inicio-sesion.php", {
             method:"POST", body:datosForm
         }).then(respuesta =>{
-            return respuesta.json ()
+            return respuesta.json();
         }).then (datosJSON =>{
             if(datosJSON == null){
                 alert ("Usuario o contraseña incorrecta")
@@ -18,7 +18,5 @@ window.addEventListener("load", ()=>{
                 window.location.href="./index.php" //colocar la ruta de la pagina de los puntos
             }
         }) 
-
-
     })
 })
