@@ -1,5 +1,4 @@
 window.addEventListener("load",()=>{
-    // let info_inicio_sesion = document.getElementById("info-inicio-sesion");
     let registro = document.getElementById("btnregistro");
     let registroForm = document.getElementById("registro-form");
 
