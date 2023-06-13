@@ -26,6 +26,10 @@
                         <input type='password' name='contrasena'>
                     </label>
                     <br> <br>
+                    <label>Casa:
+                        <input type='text' name='casa'>
+                    </label>
+                    <br><br>
                     <button type='button' id='btnregistro'>Enviar</button>
                     <br> <br>
                 </form>

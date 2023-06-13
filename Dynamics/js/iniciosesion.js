@@ -8,14 +8,15 @@ window.addEventListener("load", ()=>{
         fetch ("./Dynamics/php/inicio-sesion.php", {
             method:"POST", body:datosForm
         }).then(respuesta =>{
-            return respuesta.json();
+            console.log(respuesta);
+            return respuesta.text();
         }).then (datosJSON =>{
             if(datosJSON == null){
                 alert ("Usuario o contraseña incorrecta")
             }else if (datosJSON== false){
                 alert("Falta un dato")
             }else{
-                window.location.href="./index.php" //colocar la ruta de la pagina de los puntos
+                window.location.href="./Dynamics/php/puntos.php"; //colocar la ruta de la pagina de los puntos
             }
         }) 
     })
